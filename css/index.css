@@ -3,3 +3,41 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+
+.header {
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+}
+#navbar {
+  overflow: hidden;
+  background-color: rgb(54, 83, 212);
+}
+#navbar a {
+  float: left; /* Ubica los enlaces lo mas a la izquierda posible */
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: rgb(139, 190, 219);
+  color: black;
+}
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.content {
+  padding: 8px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
