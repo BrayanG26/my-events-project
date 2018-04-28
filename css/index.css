@@ -8,15 +8,21 @@
   background-color: #f1f1f1;
   padding: 40px;
   text-align: center;
+  color: rgb(169, 170, 209);
+  font: bold;
+  height: 300px;
+  background-image: url(https://go.forrester.com/wp-content/uploads/E-Overview-mimg-forums-Todd-Walthal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #navbar {
   overflow: hidden;
-  background-color: rgb(54, 83, 212);
+  background-color: rgb(207, 209, 219);
 }
 #navbar a {
   float: left; /* Ubica los enlaces lo mas a la izquierda posible */
   display: block;
-  color: #f2f2f2;
+  color: #3d48e2;
   text-align: center;
   padding: 14px 30px;
   text-decoration: none;
@@ -25,6 +31,7 @@
 #navbar a:hover {
   background-color: rgb(139, 190, 219);
   color: black;
+  cursor: pointer;
 }
 #navbar a.active {
   background-color: #4CAF50;
@@ -37,6 +44,9 @@
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: rgb(4, 6, 39) !important;
+  transition: background-color 500ms linear;
+  
 }
 .sticky + .content {
   padding-top: 60px;
