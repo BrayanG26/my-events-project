@@ -8,12 +8,13 @@
   background-color: #f1f1f1;
   padding: 40px;
   text-align: center;
-  color: rgb(169, 170, 209);
+  color: rgb(1, 1, 5);
   font: bold;
   height: 300px;
-  background-image: url(https://go.forrester.com/wp-content/uploads/E-Overview-mimg-forums-Todd-Walthal.jpg);
+  background-image: url(http://www.udes.edu.co/images/la_universidad/campus/1-1-1-1-1-1-1-1-1-1-1-1-1-1-1Foto_de_la_semana_Martes_13_.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 #navbar {
   overflow: hidden;
@@ -36,6 +37,7 @@
 #navbar a.active {
   background-color: #4CAF50;
   color: white;
+  cursor: auto;
 }
 .content {
   padding: 8px;
@@ -44,10 +46,22 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(4, 6, 39) !important;
+  background-color: rgb(250, 250, 250) !important;
   transition: background-color 500ms linear;
   
 }
 .sticky + .content {
   padding-top: 60px;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background: rgb(40, 40, 54)
+}
+p.texto{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
 }
