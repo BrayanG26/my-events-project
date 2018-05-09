@@ -5,6 +5,8 @@ Este proyecto de grado consiste en crear una plataforma web que permita manejar 
 
 Visualice aqui el [CRONOGRAMA](https://docs.google.com/spreadsheets/d/1RLBRFkarLfwdpWXUgt7J6-iDbVPPWmFZfGgn-mSF-4U/edit?usp=sharing)
 
+[Ver aplicación](https://my-events-project-brayang26.c9users.io/index.html)
+
 ![keep working](https://www.ea-coder.com/wp-content/uploads/2015/07/can-any-strategy-be-coded-into-mt4-robot-704x450.jpg)
 
 
