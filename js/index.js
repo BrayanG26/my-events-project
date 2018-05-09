@@ -9,7 +9,7 @@ $(document).ready(function () {
             navbar.removeClass("sticky");
         } */
         if (window.pageYOffset >= sticky) {
-            tape.classList.add("sticky")
+            tape.classList.add("sticky");
         } else {
             tape.classList.remove("sticky");
         }
@@ -34,7 +34,21 @@ function recogerDatos() {
 }
 
 function enviarDatos(email, organizador) {
+    alert("Email: "+email+"\n"+"Organizador: "+organizador);
+    
+    var JSONObject= {"email":email, "organizador":organizador };
+    var jsonData = JSON.parse( JSONObject );    
 
+    var request = $.ajax({
+        url: "rest/orders",
+        type: "POST",
+        data: jsonData,
+        dataType: "json",
+        processData:true,
+        success:function(data,status,jqXHR){
+            alert("success..."+data);
+        }
+    }); 
 }
 
 
