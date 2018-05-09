@@ -10,14 +10,32 @@ $(document).ready(function () {
         } */
         if (window.pageYOffset >= sticky) {
             tape.classList.add("sticky")
-            // $(".main").addClass("main");
-            // $contenido.css({"paddinTop":"200px"});
         } else {
             tape.classList.remove("sticky");
-            // $contenido.css({ "paddinTop": "" });
-            // $(".main").removeClass("main");
         }
     });
+
+    $("#enviarDatos").click(recogerDatos);
+
 });
+
+function recogerDatos() {
+    var email = $("#email").val();
+    var organizador = $("#company").val();
+
+    if (email == "" || email == null || organizador == "" || organizador == null) {
+        console.warn("ERROR, COMPLETE LA INFORMACIÓN")
+    } else {
+        console.log("INFORMACIÓN ENVIADA");
+        console.log("Información recogida: " + email + " - " + organizador);
+        enviarDatos(email,organizador);
+    }
+    
+}
+
+function enviarDatos(email, organizador) {
+
+}
+
 
 
