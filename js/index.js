@@ -35,23 +35,21 @@ function recogerDatos() {
 
 function enviarDatos(email, organizador) {
     var urlAPI = 'https://script.google.com/macros/s/AKfycbzZKsQdwLaPvxD-Vt-HC_4sAnlNAjJQ5p925lVWqAHSCwAENJ4/exec';
-    // alert("Email: " + email + "\n" + "Organizador: " + organizador);
+    var params = {"organizador": organizador,"email": email };
 
-    var JSONObject = { "id":5,
-                        "organizador": organizador,
-                        "email": email
-                    };
-    // var jsonData = JSON.parse(JSONObject);
-    var request = $.ajax({
+    $.ajax({
         type:'POST',
         url: urlAPI,
-        data: JSONObject,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
+        data: params,
         processData: true,
         success: function (data, status, jqXHR) {
-            alert("success..." + data);
+            console.log(data);
+            console.log(jqXHR);
+        },
+        error:function () {
+            console.error('An error ocurr');
         }
+        
     });
 }
 
