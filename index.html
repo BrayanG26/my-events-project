@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="https://png.icons8.com/flat_round/100/000000/--select-yes.png" type="image/png">
-    <title>Quick Events</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quick Events | HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create your events, manage and publish it">
+    <meta name="keywords" content="events, quick, fast, manage, publish">
+    <meta name="author" content="Brayan Guerrero">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="main.js"></script>
 </head>
-
 <body>
-    <div class="contenedor">
-        <div class="header">
-            <!-- <h2>Quick Events</h2>
-            <h3>Publique sus eventos de forma rápida y sencilla</h3> -->
+    <header class="ribbon">
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Quick</span> Events</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="tape">
-            <div class="wrapper">
-                <div class="logo">
-                    QuickEvents
-                </div>
-                <div id="navbar">
-                    <a class="active">Home</a>
-                    <a>News</a>
-                    <a href="./contact.html">Contact</a>
-                </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Create your events fast, manage and publish it</h1>
+            <p>Qui qui animi illum rerum ut optio voluptas sapiente earum. Culpa laborum similique. Consequatur qui numquam facilis sint nesciunt assumenda.</p>
+        </div>
+    </section>
+    <section class="ribbon" id="newsletter">
+        <div class="container">
+            <h1>Receive newest events notifications</h1>
+            <form action="" method="get">
+                <input type="text" name="email" id="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Receive</button>
+            </form>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="http://www.annoni.com.ar/backend/assets/plugins/ionicons/src/android-alarm-clock.svg" height="62" width="62" alt="fast" srcset="">
+                <h3>Fast</h3>
+                <p>Et amet rerum excepturi at minima labore dolores soluta et. Rerum quaerat sit cumque cum itaque. Enim velit hic id earum. Laudantium illum voluptatum sint et cumque illum autem. Pariatur veniam omnis et omnis.</p>
+            </div>
+            <div class="box">
+                <img src="https://smanegeri1babelan.sch.id/assets/icon/ionicons-2.0.1/src/settings.svg" height="62" width="62" alt="manage" srcset="">
+                <h3>Manage</h3>
+                <p>Et amet rerum excepturi at minima labore dolores soluta et. Rerum quaerat sit cumque cum itaque. Enim velit hic id
+                    earum. Laudantium illum voluptatum sint et cumque illum autem. Pariatur veniam omnis et omnis.</p>
+            </div>
+            <div class="box">
+                <img src="http://cdn.onlinewebfonts.com/svg/img_513.png" height="62" width="62" alt="publish" srcset="">
+                <h3>Publish</h3>
+                <p>Et amet rerum excepturi at minima labore dolores soluta et. Rerum quaerat sit cumque cum itaque. Enim velit hic id
+                    earum. Laudantium illum voluptatum sint et cumque illum autem. Pariatur veniam omnis et omnis.</p>
             </div>
         </div>
-        <div class="main">
-            <h3>Sticky Navigation Example</h3>
-            <p>The navbar will stick to the top when you reach its scroll position.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-                et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-                repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <div class="formulario">
-                <h2>Ingrese su correo electrónico:</h2>
-                <form action="#" method="POST">
-                    <br>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" value="">
-                    <br> 
-                    <br>
-                    <label for="company">Empresa: </label>
-                    <input type="text" id="company" name="company" value="">
-                    <br>
-                    <br>
-                    <!-- <input type="submit" id="enviarDatos" value="Iniciar" class="wrapper"> -->
-
-                </form>
-                <button type="button" id="enviarDatos">ENVIAR</button>
-            </div>
+    </section>
+    <section class="search ribbon">
+        <div class="container">
+            <label for="">Buscar </label>   <input type="text" name="" id="">
         </div>
+    </section>
+    <section class="categories ribbon">
+        <div class="container">
 
-        <footer>
-            <p class="texto">Todos los derechos de autor se encuentran reservados &copy; BrayanG26</p>
-        </footer>
-    </div>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+        </div>
+    </section>
+    <footer>
+        <p>Quick Events, Copyright &copy; 2018</p>
+    </footer>
 </body>
-
 </html>

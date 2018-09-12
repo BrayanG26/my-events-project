@@ -18,10 +18,6 @@ $(document).ready(function () {
     });
 
     $("#enviarDatos").click(recogerDatosOrganizador);
-    $('#cookieTest').click(function () {
-        Cookies.set("organizador", "lamejorcookiedetodalahistoria", 2);
-        console.log(Cookies.get("organizador"));
-    });
 
 });
 

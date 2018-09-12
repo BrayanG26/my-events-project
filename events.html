@@ -6,18 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <title>Cree sus eventos</title>
     <style>
-        
     </style>
 </head>
 
 <body>
     <div class="contenedor-principal">
         <div class="user">
-            <span id="nombre-usuario"></span>
-            <button id="obtenerEventos" class="submit">IMPRIMIR</button>
+            <span id="nombre-usuario">brayanguerrero4040@gmail.com</span>
+            <button id="obtenerEventos" class="submit">MOSTRAR</button>
         </div>
+        <div class="filters">
+            <div class="filters__option colapsable">
+                <p class="filter__content">FECHA</p>
+            </div>
+            <div class="filters__option colapsable">
+                <p class="filter__content">NOMBRE</p>
+            </div>
+            <div class="filters__option colapsable" id="gratis">
+                <p class="filter__content">GRATIS</p>
+            </div>
+            <div class="filters__option colapsable" id="pago">
+                <p class="filter__content">PAGO</p>
+            </div>
+        </div>
+        <div class="input_filters">
+            <div class="opcion_fecha">
+                <label for="today" class="leyenda_input_radio"><input type="radio" name="date" id="today" value="today"> Hoy</label> 
+                <label for="tomorrow" class="leyenda_input_radio"><input type="radio" name="date" id="tomorrow" value="tomorrow"> Mañana</label> 
+                <label for="last-week" class="leyenda_input_radio"><input type="radio" name="date" id="last-week" value="last-week"> Esta semana</label>
+            </div>
+            <div class="input_nombre">
+                <label for="">Nombre: </label><input type="text" name="" id="nombreEvento">
+                <button id="enviarNombre">OK</button>
+            </div>
+        </div>
+        <!-- <div class="input_filters">
+            <div class="content__term">
+                <input type="text" name="" id="date">
+            </div>
+            <div class="content__term">
+                <input type="text" name="" id="nombre">
+            </div>
+            <div class="content__term">
+                <input type="text" name="" id="gratis">
+            </div>
+            <div class="content__term">
+                <input type="text" name="" id="pago">
+            </div>
+        </div> -->
+        
         <!-- boton flotante -->
         <div id="container-floating">
             <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create">
@@ -69,8 +110,6 @@
                     </div>
                     <div class="costo"><p class="evento__costo">$ 0 </p></div>
                     <div class="fecha"><p class="evento__fecha">19/06/2018</p></div>
-                    
-                    
                 </div>
             </div> -->
         </div>
@@ -134,8 +173,8 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/events.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script type="text/javascript" src="js/cookie.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cookie.js"></script> -->
 </body>
 
 </html>

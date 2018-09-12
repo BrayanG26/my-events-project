@@ -1,133 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 * {
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.header {
-  background-color: #f1f1f1;
-  padding: 40px;
-  text-align: center;
-  color: rgb(1, 1, 5);
-  font: bold;
-  height: 300px;
-  background-image: url(http://www.apiacademy.co/wp-content/uploads/2015/04/Web-APIs-v5_0.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.tape{
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 30px;
-  background-color: rgb(31, 36, 63);
-}
-#navbar {
-  float: right;
-  line-height: 200px;
-  -webkit-transition: line-height 550ms ease;
-  -o-transition: line-height 550ms ease;
-  transition: line-height 550ms ease;
-}
-#navbar a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 20px;
-  line-height: normal;
-  font-size: 20px;
-  /* font-weight: bold; */
-}
-#navbar a:hover {
-  background-color: rgb(177, 212, 233);
-  border-radius: 40px;
-  color: black;
-  cursor: pointer;
-}
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-  cursor: auto;
-  border-radius: 40px;
-}
-.main {
-  padding: 8px;
-  width: 70%;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  height: 100px;
-  /* width: 100%; */
-  /* background-color: rgb(250, 250, 250) !important;
-  transition: background-color 500ms linear; */
-  
-}
-.sticky .logo{
-  line-height: 100px;
-  font-size: 30px;
-  -webkit-transition: line-height 550ms ease;
-  -o-transition: line-height 550ms ease;
-  transition: line-height 550ms ease;
-}
-/* .sticky + .main {
-  padding-top: 60px;
-} */
-footer{
-  width: 100%;
-  height: 50px;
-  background: rgb(40, 40, 54)
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-/* Texto del footer */
-p.texto{
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  text-align: center;
-  position: relative;
-  bottom: 0;
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-.contenedor{
-  background: rgb(250, 250, 250);
-  width: 100%;
-  /* max-width: 1000px; */
+
+ul {
+    margin: 0;
+    padding: 0;
 }
-.wrapper{
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
 }
-.logo{
-  color: #f1f1f1;
-  font-size: 50px;
-  line-height: 200px;
-  float: left;
-  -webkit-transition: font-size 550ms ease;
-  -o-transition: font-size 550ms ease;
-  transition: font-size 550ms ease;
+
+/* For ribbons sections */
+
+.ribbon {
+    background: #35424a;
 }
-.main p{
-  margin-bottom: 1em;
+
+/* Header */
+
+header {
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
 }
-@media screen and (max-width: 750px){
-  .tape .logo,
-  .tape #navbar{
-    width: 100%;
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url('https://nyscf.org/wp-content/uploads/2017/05/5I4A4405_RT_conference.jpg') no-repeat fixed center;
     text-align: center;
-    line-height: 100px;
-  }
-  .sticky{
-    height: auto;
-  }
-  .sticky .logo,
-  .sticky #navbar{
-    line-height: 50px;
-    -webkit-transition: line-height 550ms ease;
-    -o-transition: line-height 550ms ease;
-    transition: line-height 450ms ease;
-  }
+    color: #ffffff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }

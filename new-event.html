@@ -28,7 +28,15 @@
                     <label for="nombreEvento">Nombre</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="nombreEvento" name="nombre" placeholder="Nombre del evento..">
+                    <input type="text" id="nombreEvento" class="formulario" name="nombre" placeholder="Nombre del evento..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="ciudad">Ciudad</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ciudad" class="formulario" name="ciudad" placeholder="Ciudad..">
                 </div>
             </div>
             <div class="row">
@@ -36,7 +44,7 @@
                     <label for="lugar">Lugar</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lugar" name="lugar" placeholder="Lugar..">
+                    <input type="text" id="lugar" class="formulario" name="lugar" placeholder="Lugar..">
                 </div>
             </div>
             <div class="row">
@@ -44,25 +52,17 @@
                     <label for="fecha">Fecha</label>
                 </div>
                 <div class="col-25">
-                    <input type="text" class="datepicker" id="fecha" name="fecha" placeholder="Fecha..">
+                    <input type="text" class="datepicker formulario" id="fecha" name="fecha" placeholder="Fecha..">
                 </div>
                 <div class="col-25"><label for="hora">Hora</label></div>
-                <div class="col-25"><input type="text" id="hora" class="timepicker" placeholder="Hora.."></div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="ciudad">Ciudad</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad..">
-                </div>
+                <div class="col-25"><input type="text" id="hora" class="timepicker formulario" placeholder="Hora.."></div>
             </div>
             <div class="row">
                 <div class="col-25">
                     <label for="descripcion">Descripción</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="descripcion" name="descripcion" placeholder="Información adicional.." style="height:200px"></textarea>
+                    <textarea id="descripcion" class="formulario" name="descripcion" placeholder="Información adicional.." style="height:200px"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -70,8 +70,8 @@
                     <label for="categoria">Categoria</label>
                 </div>
                 <div class="col-75">
-                    <select id="categoria" name="categoria">
-                        <option value="" selected="selected">Seleccione</option>
+                    <select id="categoria" class="formulario" name="categoria">
+                        <option value="" selected="selected" disabled>Seleccione</option>
                         <option value="musica">Música</option>
                         <option value="teatro">Teatro</option>
                         <option value="empleo">Empleo</option>
@@ -83,7 +83,7 @@
                     <label for="capacidad">Capacidad</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="capacidad" name="capacidad" placeholder="Capacidad..">
+                    <input type="text" id="capacidad" class="formulario" name="capacidad" placeholder="Capacidad..">
                 </div>
             </div>
             <div class="row">
@@ -91,7 +91,7 @@
                     <label for="sePaga">No paga</label>
                 </div>
                 <div class="col-25">
-                    <input type="checkbox" value="no" id="sePaga" name="sePaga" placeholder="Capacidad..">
+                    <input type="checkbox" value="si" id="sePaga" class="formulario" name="sePaga">
                 </div>
             </div>
             <div class="row">
@@ -99,7 +99,7 @@
                     <label for="costo">Costo</label>
                 </div>
                 <div class="col-25">
-                    <input type="text" id="costo" name="costo" placeholder="Valor..">
+                    <input type="text" id="costo" class="formulario" name="costo" placeholder="Valor..">
                 </div>
             </div>
             <div class="row">

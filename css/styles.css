@@ -439,6 +439,7 @@ a.view-more:hover {
 
 .contenedor-eventos {
   width: 90%;
+  margin: auto;
 }
 
 .evento__card__element {
@@ -497,7 +498,7 @@ a.view-more:hover {
   border-top: 0.0625em solid #ebebeb;
 }
 
-.evento__link{
+.evento__link {
   position: relative;
   display: block;
   color: inherit;
@@ -578,4 +579,88 @@ a.view-more:hover {
   .blog-card .details {
     width: 40%;
   }
+}
+
+/* Filter bar */
+
+.filters {
+  border: rgb(70, 68, 231) solid 1px;
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.filters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.filters__option {
+  width: calc(100% / 4);
+  height: 100%;
+  background-color: #948e99c4;
+  color: rgb(252, 252, 252);
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter__content {
+  text-align: center;
+}
+
+.filters__option:hover {
+  background-color: #3c3b3f;
+  color: white;
+}
+
+/* Contenedor de filtros de busqueda */
+
+.criteria {
+  border: 1px solid rgb(3, 3, 15);
+  border-radius: 1rem;
+  padding: 2px 5px 2px;
+  float: left;
+  background-color: #9597f593;
+}
+
+#content__criteria {
+  font-size: 1rem;
+}
+
+.input_filters{
+  margin: auto;
+  width: 40%;
+}
+.leyenda_input_radio{
+  display: block;
+}
+
+/* Elementos colapsables de la barra de filtros */
+
+.content__term {
+  padding: 0 18px;
+  max-height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  display: inline;
+  z-index: 20;
+}
+
+.active, .colapsable:hover {
+  background-color: #555;
+}
+
+.input_filters div{
+  width: calc(100% / 4);
+  float: left;
+  overflow: hidden;
+}
+
+.input_nombre #nombreEvento{
+  width: 80%;
 }
