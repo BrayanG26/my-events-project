@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* estilos para inputs [formularios] */
 
 /* input {
@@ -6,14 +10,14 @@
   margin-bottom: 0.5rem;
 } */
 
-input:focus {
-    outline: 2px solid rgb(113, 151, 201);
+.new-form__input-element:focus {
+    outline: 0;
+    border-color: #35424a;
 }
 
-label {
-    text-align: right;
-    display: block;
-    padding: 0.5em 1.5em 0.5em 0;
+.new-form__input-label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
 /* button {
@@ -25,32 +29,73 @@ label {
   } */
 
 .contenedor-formulario {
-    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 3px #000;
 }
 
-/* Estilos copiados de W3Schools */
+/**
+ * Estilos responsive form W3SCHOOL: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form
+ */
 
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+} */
+.new-form__input-element{
+    width: 100%;
+    /*padding: 12px;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    resize: vertical;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    color: #666;
+    border-radius: 0;
+    margin-bottom: 10px;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-.submit {
-    background-color: rgb(33, 46, 163);
+.new-form__submit-button {
+    /* background-color: rgb(33, 46, 163);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer; */
     float: right;
+
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #e8491d;
+    color: #ffffff;
+    cursor: pointer;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.new-form__submit-button:hover {
+    background: #35424a;
 }
 
 .wrap {
@@ -62,12 +107,15 @@ label {
     box-shadow: 0px 0px 3px grey;
 }
 
-.submit:hover {
-    background-color: #6459c7;
-}
-
 .container {
     padding: 20px;
+    background-color: #f2f2f2;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
 }
 
 .col-25 {
@@ -85,16 +133,21 @@ label {
 .col-100 {
     width: 100%;
     margin-top: 6px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.form__titulo{
-    text-align: center;
+.form__titulo {
     text-transform: uppercase;
+    padding: 0 0 20px 0;
+    font-size: 30px;
+    color: #666;
+    font-weight: lighter;
+    text-align: center;
 }
 
 /* Clear floats after the columns */
-.row{
+
+.row {
     width: 100%;
 }
 
@@ -102,4 +155,21 @@ label {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 550px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/**
+ * For hide #ui-datepicker-div element
+ */
+
+#ui-datepicker-div {
+    display: none;
 }
